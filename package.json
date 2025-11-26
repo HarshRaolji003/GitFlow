@@ -9,13 +9,20 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:gitflow.showCommits",
+    "onCommand:gitflow.helloWorld"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "gitflow.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "gitflow.showCommits",
+        "title": "GitFlow: Show Commit History"
       }
     ]
   },
